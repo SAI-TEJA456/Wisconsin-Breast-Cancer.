@@ -2,27 +2,29 @@
 
 The Wisconsin Breast Cancer Database contains data from 569 scans of cells from biopsied breast tissue. Image recognition was used to calculate features describing the shape and texture of cells in each image, such as cell radius, perimeter, and texture. The database also includes whether the cell sample was benign or malignant. Since the correct cell type is known, classifying cells is a supervised learning task. In the breast cancer dataset, malignant cells are labeled Diagnosis=1. Benign cells are labeled Diagnosis=0.
 
-# Supervised Learning on Cancer Dataset**
-This repository contains a series of Jupyter notebooks designed to guide students through a hands-on learning experience with supervised machine learning techniques applied to a cancer dataset.
+The analysis is based on the Wisconsin Breast Cancer Dataset, which includes features computed from digitized images of a fine needle aspirate (FNA) of breast masses.
 
-📁 Notebooks Overview
-Notebook	Description
-SupervisedLearning_Cancer_01.ipynb	Notebook 1 sets the stage, likely focusing on initial data exploration, preprocessing, and understanding the structure of the dataset. (No description markdown found)
-SupervisedLearning_Cancer_02.ipynb	Introduces participation activities involving supervised learning, with notes that results may vary due to randomization. Analyses should be performed using seed=123.
-SupervisedLearning_Cancer_03.ipynb	Continues the analysis with more participation activities. Emphasizes reproducibility with the specified seed.
-SupervisedLearning_Cancer_04.ipynb	Final steps of the supervised learning workflow, continuing with the same randomization considerations as earlier notebooks.
+Rows: 569
 
-🎯 Objective
-The goal of this series is to apply supervised learning algorithms to a real-world medical dataset, specifically focusing on cancer prediction. The notebooks include exercises that reinforce machine learning concepts and encourage experimentation.
+Columns: 32
 
-🛠 Technologies Used
-Python 3.x
-Jupyter Notebook
-Scikit-learn
-Pandas
-Matplotlib / Seaborn
+Missing Values: None
 
- Data Processing and Modeling Workflow
+📌 Key Features:
+ID: Patient identifier (not used in modeling)
+
+Diagnosis: Target label (M = malignant, B = benign)
+
+Radius mean, Texture mean, Area mean, etc.: Mean values of various cell characteristics
+
+Worst values: Features like Radius worst, Perimeter worst, etc., indicating extreme values
+
+Compactness, Concavity, Symmetry, and more describe cell shape and texture
+
+Each feature helps build predictive models for cancer classification using supervised learning.
+
+
+Data Processing and Modeling Workflow
 Load and Clean the Data
 
 Import the dataset from a CSV file.
